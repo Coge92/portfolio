@@ -1,0 +1,48 @@
+body, html, #neon {
+    margin: 0;
+    width: 100%;
+
+  }
+  
+  #neon {
+    overflow: hidden;
+    touch-action: pan-up;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    text-shadow: 0 0 5px #ffffff, 0 0 20px #000, 0 0 30px #000;
+    height: 604px;
+  }
+  
+  #neon h2 {
+    --fontSize: 60px;
+    --lineHeight: 80px;
+    width: auto;
+    height: 60vh;
+    line-height: var(--lineHeight);
+    margin: calc(30vh - var(--lineHeight)) auto 0;
+    font-size: var(--fontSize);
+    text-transform: uppercase;
+    transition: font-size 1s;
+
+    @media (max-width: 768px) {
+      font-size: calc(var(--fontSize) / 2);
+    }
+    
+  }
+  
+  #neon a {
+    margin-top: 10px;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  #neon canvas {
+    display: block;
+    position: fixed;
+    z-index: 0;
+    top: 0;
+    height: 100%;
+  }
+  
