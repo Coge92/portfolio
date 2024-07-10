@@ -1,9 +1,7 @@
-base {
+.base {
   display: table;
   width: 100%;
   height: 100%;
-  background-color: #ee1111;
-  color: #000;
   line-height: 1.6;
   position: relative;
   font-family: sans-serif;
@@ -76,4 +74,10 @@ base {
   100% {
     top: 110%;
   }
+}
+
+.blabla {
+
+justify-content: flex-start;
+  
 }

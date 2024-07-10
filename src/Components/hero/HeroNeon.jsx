@@ -14,7 +14,7 @@ export default function HeroNeon() {
             radius2: 30,
             velocityTreshold: 10,
             sleepRadiusX: 100,
-            sleepRadiusY: 50,
+            sleepRadiusY: 0,
             sleepTimeCoefX: 0.0025,
             sleepTimeCoefY: 0.0025
         })

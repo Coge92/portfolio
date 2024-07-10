@@ -18,9 +18,8 @@ export function Home() {
                 <HeroNeon></HeroNeon>
             </section>
 
-            <section className="section" id="Apropos">
-                <AProposBackground></AProposBackground>
-            </section>
+            <AProposBackground></AProposBackground>
+     
 
             <section
             className="section"

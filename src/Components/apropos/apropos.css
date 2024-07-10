@@ -1,0 +1,32 @@
+.section--apropos {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background: #000000;
+  color: #fff;
+  position: relative;
+  /* padding: 50px; */
+}
+.section--apropos__container {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 50px;
+}
+
+.apropos__profil {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  z-index: 100;
+}
+.apropos__profil img {
+  width: 250px;
+  border-radius: 50px;
+}/*# sourceMappingURL=apropos.css.map */
