@@ -24,7 +24,7 @@ export default function HeroNeon() {
         <section id="hero-background" className="">
             <div id="neon">
                 <div id="hero" style={{width: "100%"}}>
-                    <h2>BIENVENUE</h2>
+                    <h2>WELCOME</h2>
                 </div>   
             </div>
         </section>

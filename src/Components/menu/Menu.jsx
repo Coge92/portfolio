@@ -46,7 +46,7 @@ export default function Menu() {
               header.classList.add("sticky");
               page.classList.remove("menuopen");
     
-              console.log("test click en dehors");
+              console.log("test press Echape");
             }
           });
     
@@ -85,9 +85,9 @@ export default function Menu() {
 
     <header id="myHeader" className="">
         <nav>
-          <a href="#Apropos">A propos</a>
+          <a href="#Apropos">About</a>
           <a href="#background">Background</a>
-          <a href="#space">Space</a>
+          <a href="#projects">IT Projects</a>
           <a href="#future">Future</a>
           <button id="openmenu">
             <span></span>

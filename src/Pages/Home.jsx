@@ -3,6 +3,7 @@ import HeroNeon from "../Components/hero/HeroNeon";
 import APropos from "../Components/apropos/APropos.jsx"
 import Menu from "../Components/menu/Menu.jsx";
 import Parcours from "../Components/parcours/Parcours.jsx";
+import Projects from "../Components/projects/projetcs.jsx";
 
 
 export function Home() {
@@ -17,6 +18,7 @@ export function Home() {
             <HeroNeon></HeroNeon>
             <APropos></APropos>
             <Parcours></Parcours>
+            <Projects></Projects>
      
 
             <section
