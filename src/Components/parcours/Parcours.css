@@ -10,6 +10,11 @@
   position: relative;
   padding-top: 100px;
 }
+@media (max-width: 768px) {
+  .section--parcours h2 {
+    font-size: 1.6em;
+  }
+}
 
 .parcours__container {
   width: 100%;
@@ -110,6 +115,11 @@
   }
   .parcours__container .timeline__item--year:nth-of-type(2n):before {
     display: none;
+  }
+}
+@media (max-width: 768px) {
+  .parcours__container .timeline__item--year {
+    font-size: 1.4rem;
   }
 }
 .parcours__container .timeline__title {

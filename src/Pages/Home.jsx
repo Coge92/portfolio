@@ -19,28 +19,7 @@ export function Home() {
             <APropos></APropos>
             <Parcours></Parcours>
             <Projects></Projects>
-     
-
-            <section
-            className="section"
-            id="space"
-            style={{
-                backgroundImage: "url(https://assets.codepen.io/214624/vision.jpg)",
-            }}
-            >
-            <h2>Space.</h2>
-            </section>
-
-            <section
-            className="section"
-            id="future"
-            style={{
-                backgroundImage: "url(https://assets.codepen.io/214624/vision.jpg)",
-            }}
-            >
-            <h2>Future.</h2>
-            </section>
-      </div>
+        </div>
     </>
   );
 }

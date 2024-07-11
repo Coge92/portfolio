@@ -10,6 +10,11 @@
   position: relative;
   padding-top: 100px;
 }
+@media (max-width: 768px) {
+  .section--projects h2 {
+    font-size: 1.6em;
+  }
+}
 
 .projects__container {
   width: 90%;
@@ -26,6 +31,12 @@
   font-size: 100px;
   z-index: 1000;
   transition: scale 0.1s;
+  color: rgb(149, 9, 82);
+}
+@media (max-width: 768px) {
+  .projects__container .arrow {
+    font-size: 75px;
+  }
 }
 .projects__container .arrow:hover {
   scale: 1.1;

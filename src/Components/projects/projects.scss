@@ -21,6 +21,15 @@ $midnight-green: rgba(0, 92, 105, 1);
 
     padding-top: 100px;   
 
+    h2 {
+
+        @media (max-width: 768px) {
+  
+          font-size: 1.6em;
+  
+        }
+      }
+
 }
 
 .projects__container {
@@ -36,12 +45,19 @@ $midnight-green: rgba(0, 92, 105, 1);
     align-items: center;
 
     overflow: hidden;
-
+   
     .arrow {
 
         font-size: 100px;
         z-index: 1000;
         transition: scale 0.1s;
+        color: $murrey;
+
+        @media (max-width: 768px) {
+        
+            font-size: 75px;
+    
+        }
     }
 
     .arrow:hover {
@@ -52,6 +68,7 @@ $midnight-green: rgba(0, 92, 105, 1);
         width: 80%;
         display: flex;
         position: relative;
+
     }
 
     .test {

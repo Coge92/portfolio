@@ -12,7 +12,16 @@
         
     position: relative;
 
-    padding-top: 100px;   
+    padding-top: 100px; 
+    
+    h2 {
+
+      @media (max-width: 768px) {
+
+        font-size: 1.6em;
+
+      }
+    }
 
 }
 
@@ -32,6 +41,7 @@
     * {
       box-sizing: border-box;
     }
+
     .timeline {
         position: relative;
         padding: 1rem;
@@ -104,10 +114,6 @@
             }
           }
         }
-
-        &:hover {
-            
-        }
       }
       
       .timeline__item--year {
@@ -137,6 +143,12 @@
               display: none;
             }
           }
+        }
+
+        @media (max-width: 768px) {
+
+          font-size: 1.4rem;
+
         }
       }
       

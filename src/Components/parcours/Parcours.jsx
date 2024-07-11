@@ -8,9 +8,7 @@ export default function Parcours() {
         
         <section className="section--parcours" id="background">
 
-            <div className="parcours__title">
-                <h2>Personal background.</h2>
-            </div>
+            <h2>Personal background.</h2>
 
             <div className="parcours__container">
 
