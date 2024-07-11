@@ -1,7 +1,8 @@
 import "./home.css";
 import HeroNeon from "../Components/hero/HeroNeon";
-import AProposBackground from "../Components/apropos/APropos.jsx"
+import APropos from "../Components/apropos/APropos.jsx"
 import Menu from "../Components/menu/Menu.jsx";
+import Parcours from "../Components/parcours/Parcours.jsx";
 
 
 export function Home() {
@@ -13,12 +14,9 @@ export function Home() {
         <div id="main" className="">
 
             <h1>Mehdi Habibi</h1>
-
-            <section id="hero-background" className="">
-                <HeroNeon></HeroNeon>
-            </section>
-
-            <AProposBackground></AProposBackground>
+            <HeroNeon></HeroNeon>
+            <APropos></APropos>
+            <Parcours></Parcours>
      
 
             <section

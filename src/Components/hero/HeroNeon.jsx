@@ -21,11 +21,13 @@ export default function HeroNeon() {
     }, [])
 
     return (
-        <div id="neon">
-            <div id="hero">
-                <h2>BIENVENUE</h2>
-            </div>   
-        </div>
+        <section id="hero-background" className="">
+            <div id="neon">
+                <div id="hero" style={{width: "100%"}}>
+                    <h2>BIENVENUE</h2>
+                </div>   
+            </div>
+        </section>
 
 
     )

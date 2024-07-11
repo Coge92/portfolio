@@ -86,7 +86,7 @@ export default function Menu() {
     <header id="myHeader" className="">
         <nav>
           <a href="#Apropos">A propos</a>
-          <a href="#knowledge">Knowledge</a>
+          <a href="#background">Background</a>
           <a href="#space">Space</a>
           <a href="#future">Future</a>
           <button id="openmenu">

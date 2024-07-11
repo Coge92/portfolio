@@ -8,6 +8,9 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
+    
+    overflow-x: hidden;
+
     &.stop {
     overflow: hidden;
     }
@@ -75,7 +78,7 @@ h2 {
 }
 
 h3 {
-    font-size: 40px;
+    font-size: 30px;
 
 }
 
