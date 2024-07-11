@@ -26,8 +26,8 @@ $midnight-green: rgba(0, 92, 105, 1);
 .projects__container {
 
     width: 90%;
-    height: 60vh;
-    margin: 100px auto;
+    height: 70vh;
+    margin: 60px auto;
     border: 2px $murrey solid;
 
     display: flex;
@@ -40,21 +40,26 @@ $midnight-green: rgba(0, 92, 105, 1);
     .arrow {
 
         font-size: 100px;
+        z-index: 1000;
+        transition: scale 0.1s;
+    }
+
+    .arrow:hover {
+        scale: 1.1;
     }
 
     .central {
         width: 80%;
         display: flex;
-        gap: 35px;
+        position: relative;
+    }
 
+    .test {
 
-        .projet {
+        & img {
 
-            background-color: rgba(149, 9, 82, 0.5);
-            min-width: 400px;
-            height: 300px;
+            margin: 0;
+
         }
-
-
     }
 }
