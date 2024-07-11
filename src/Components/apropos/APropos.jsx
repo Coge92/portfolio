@@ -3,8 +3,21 @@ import "./apropos.css";
 import { Radar, PolarArea} from "react-chartjs-2";
 import { Chart as ChartJS } from "chart.js/auto";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHtml5, faCss3Alt, faSass, faJs, faReact } from "@fortawesome/free-brands-svg-icons";
-import logosvg from "../../Assets/redux.svg"
+import { faHtml5, faCss3Alt, faSass, faJs, faReact, faFigma, faGithub, faGit } from "@fortawesome/free-brands-svg-icons";
+import LogoRedux from "../../Assets/redux.svg"
+import LogoVSC from "../../Assets/vsc.svg"
+import LogoGoogleAdManager from "../../Assets/google-ad-manager-2.svg"
+import LogoGoogleAnalytics from "../../Assets/google-analytics-4.svg"
+import LogoGoogleSearch from "../../Assets/google-search-console.svg"
+import LogoMonday from "../../Assets/monday-1.svg"
+import LogoNotion from "../../Assets/notion-2.svg"
+import LogoOffice from "../../Assets/office-1.svg"
+import LogoSalesforce from "../../Assets/salesforce-2.svg"
+import LogoSellsy from "../../Assets/sellsy-svgrepo-com.svg"
+import LogoSlack from "../../Assets/slack-1.svg"
+import LogoTrello from "../../Assets/trello.svg"
+import LogoWordpress from "../../Assets/wordpress-icon-1.svg"
+import LogoBrevo from "../../Assets/brevo.svg"
 
 
 
@@ -185,35 +198,137 @@ export default function APropos() {
 
           <div className="apropos__bandeau">
             <div>
-              <h3>Technologies</h3>
+              <h3>Technologies & Tools</h3>
             </div>
             
             <div className="bandeau__container">
 
               <div className="logos">
-                <FontAwesomeIcon className="logo" icon={faHtml5} />
-                <FontAwesomeIcon className="logo" icon={faCss3Alt} />
-                <FontAwesomeIcon className="logo" icon={faSass} />
-                <FontAwesomeIcon className="logo" icon={faJs} />
-                <FontAwesomeIcon className="logo" icon={faReact} />
-                <img src={logosvg} className="logo" alt="" />
+
+                <div className="logos__container">
+                  <FontAwesomeIcon className="logo" icon={faHtml5}></FontAwesomeIcon>
+                  <p>HTML5</p>
+                </div>
+                
+                <div className="logos__container">
+                  <FontAwesomeIcon className="logo" icon={faCss3Alt}></FontAwesomeIcon>
+                  <p>CSS3</p>
+                </div>
+
+                <div className="logos__container">
+                  <FontAwesomeIcon className="logo" icon={faSass}></FontAwesomeIcon>
+                  <p>SASS</p>
+                </div>
+
+                <div className="logos__container">
+                  <FontAwesomeIcon className="logo" icon={faJs}></FontAwesomeIcon>
+                  <p>JavasScript</p>
+                </div>
+
+                <div className="logos__container">
+                  <FontAwesomeIcon className="logo" icon={faReact}></FontAwesomeIcon>
+                  <p>React</p>
+                </div>
+
+                <div className="logos__container">
+                  <img src={LogoRedux} className="logo" alt="" />
+                  <p>Redux</p>
+                </div>
+                
+                <div className="logos__container">
+                  <FontAwesomeIcon className="logo" icon={faGit}></FontAwesomeIcon>
+                  <p>Git</p>
+                </div>
+
+                <div className="logos__container">
+                  <FontAwesomeIcon className="logo" icon={faGithub}></FontAwesomeIcon>
+                  <p>Github</p>
+                </div>
+
+                <div className="logos__container">
+                  <FontAwesomeIcon className="logo" icon={faFigma}></FontAwesomeIcon>
+                  <p>Figma</p>
+                </div>
+
+                <div className="logos__container">
+                  <img src={LogoVSC} className="logo" alt="" />
+                  <p>Visual Studio Code</p>
+                </div>
+
               </div>
 
-              <div className="logos">
-                <FontAwesomeIcon className="logo" icon={faHtml5} />
-                <FontAwesomeIcon className="logo" icon={faCss3Alt} />
-                <FontAwesomeIcon className="logo" icon={faSass} />
-                <FontAwesomeIcon className="logo" icon={faJs} />
-                <FontAwesomeIcon className="logo" icon={faReact} />
-              </div>
+             </div>
+
+             <div>
+              <h3>Sales - Marketing & Productivity</h3>
+            </div>
+            
+            <div className="bandeau__container">
 
               <div className="logos">
-                <FontAwesomeIcon className="logo" icon={faHtml5} />
-                <FontAwesomeIcon className="logo" icon={faCss3Alt} />
-                <FontAwesomeIcon className="logo" icon={faSass} />
-                <FontAwesomeIcon className="logo" icon={faJs} />
-                <FontAwesomeIcon className="logo" icon={faReact} />
+
+                <div className="logos__container">
+                  <img src={LogoOffice} className="logo" alt="" />
+                  <p>Office</p>
+                </div>
+
+                <div className="logos__container">
+                  <img src={LogoSalesforce} className="logo" alt="" />
+                  <p>Salesforce</p>
+                </div>
+
+                <div className="logos__container">
+                  <img src={LogoSellsy} className="logo" alt="" />
+                  <p>Sellsy</p>
+                </div>
+
+                <div className="logos__container">
+                  <img src={LogoBrevo} className="logo" alt="" />
+                  <p>Brevo</p>
+                </div>
+
+                <div className="logos__container">
+                  <img src={LogoMonday} className="logo" alt="" />
+                  <p>Monday</p>
+                </div>
+
+                <div className="logos__container">
+                  <img src={LogoSlack} className="logo" alt="" />
+                  <p>Slack</p>
+                </div>
+
+                <div className="logos__container">
+                  <img src={LogoNotion} className="logo" alt="" />
+                  <p>Notion</p>
+                </div>
+
+                <div className="logos__container">
+                  <img src={LogoTrello} className="logo" alt="" />
+                  <p>Trello</p>
+                </div>
+
+                <div className="logos__container">
+                  <img src={LogoWordpress} className="logo" alt="" />
+                  <p>Wordpress</p>
+                </div>
+
+                <div className="logos__container">
+                  <img src={LogoGoogleAnalytics} className="logo" alt="" />
+                  <p>Google Analytics</p>
+                </div>
+
+                <div className="logos__container">
+                  <img src={LogoGoogleAdManager} className="logo" alt="" />
+                  <p>Google Ad Manager</p>
+                </div>
+
+                <div className="logos__container">
+                  <img src={LogoGoogleSearch} className="logo" alt="" />
+                  <p>Google Search Console</p>
+                </div>
+
               </div>
+
              </div>
           
           </div>
