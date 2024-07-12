@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background: linear-gradient(0deg, rgb(2, 2, 2) 37%, rgb(0, 92, 105) 100%);
+  background: linear-gradient(0deg, rgb(2, 2, 2) 37%, rgb(3, 39, 66) 100%);
   color: white;
   position: relative;
   padding-top: 100px;
@@ -32,10 +32,12 @@
   z-index: 1000;
   transition: scale 0.1s;
   color: rgb(149, 9, 82);
+  cursor: pointer;
 }
 @media (max-width: 768px) {
   .projects__container .arrow {
     font-size: 75px;
+    margin: 0 5px;
   }
 }
 .projects__container .arrow:hover {

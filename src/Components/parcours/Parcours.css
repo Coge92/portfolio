@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background: linear-gradient(0deg, rgb(0, 92, 105) 37%, rgb(94, 0, 53) 100%);
+  background: linear-gradient(0deg, rgb(3, 39, 66) 0%, rgb(0, 92, 105) 37%, rgb(94, 0, 53) 100%);
   color: white;
   position: relative;
   padding-top: 100px;
@@ -13,6 +13,7 @@
 @media (max-width: 768px) {
   .section--parcours h2 {
     font-size: 1.6em;
+    text-align: center;
   }
 }
 

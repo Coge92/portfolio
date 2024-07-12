@@ -43,12 +43,11 @@ export default function APropos() {
               />
 
               <div className="apropos__profil--text">
-                <h3>A propos de moi</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea
-                  voluptates quibusdam cumque, alias saepe aspernatur
-                  reprehenderit ratione dolore minima vero. Accusantium quisquam
-                  vel molestiae? Ullam suscipit dicta labore molestias nemo.
+                  I am naturally enthusiastic and curious. I enjoy creating solutions that generate value and have positive impacts. <br /><br />
+                  I have a strong interest in media advertising, web development, and digital marketing. 
+                  My experience covers everything from selling and managing advertising projects to digital communication strategies, event sponsorship, and direct marketing. <br /><br />
+                  Recently, I have developed my web development skills by learning JavaScript and React.
                 </p>
               </div>
             </div>

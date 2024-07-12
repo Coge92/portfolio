@@ -1,49 +1,44 @@
-body, html, #neon {
-    margin: 0;
-    width: 100%;
+@charset "UTF-8";
+.section__hero {
+  height: 65vh;
+  width: 100vw;
+  background-image: linear-gradient(0deg, rgb(3, 39, 66) 0%, rgba(3, 39, 66, 0.5) 10%, rgba(2, 2, 2, 0) 100%), url("../../Assets/background-hero.webp");
+  background-size: cover; /* Ajuste la taille de l'image pour couvrir toute la zone */
+  background-position: center; /* Centre l'image dans la zone */
+  background-repeat: no-repeat; /* Empêche la répétition de l'image */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section__hero .barre {
+  position: absolute;
+  height: 3px;
+  background-color: white;
+  width: 70%;
+}
+.section__hero #left {
+  top: 25vh;
+  animation: slideLeftToRight 1s forwards;
+}
+.section__hero #right {
+  top: 40vh;
+  animation: slideRightToLeft 1s forwards;
+}
 
+@keyframes slideLeftToRight {
+  from {
+    transform: translateX(-100vw);
   }
-  
-  #neon {
-    overflow: hidden;
-    touch-action: pan-up;
-    color: #ffffff;
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
-    text-shadow: 0 0 5px #ffffff, 0 0 20px #000, 0 0 30px #000;
-    height: 604px;
+  to {
+    transform: translateX(0);
   }
-  
-  #neon h2 {
-    --fontSize: 60px;
-    --lineHeight: 80px;
-    width: auto;
-    height: 60vh;
-    line-height: var(--lineHeight);
-    margin: calc(30vh - var(--lineHeight)) auto 0;
-    font-size: var(--fontSize);
-    text-transform: uppercase;
-    transition: font-size 1s;
-
-    @media (max-width: 768px) {
-      font-size: calc(var(--fontSize) / 2);
-    }
-    
+}
+@keyframes slideRightToLeft {
+  from {
+    transform: translateX(100vw);
   }
-  
-  #neon a {
-    margin-top: 10px;
-    display: inline-block;
-    text-decoration: none;
-    color: #fff;
+  to {
+    transform: translateX(0);
   }
-  
-  #neon canvas {
-    display: block;
-    position: fixed;
-    z-index: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-  }
-  
+}/*# sourceMappingURL=heroNeon.css.map */

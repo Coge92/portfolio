@@ -19,7 +19,7 @@ import {
   faChevronRight,
 } from "@fortawesome/free-solid-svg-icons";
 import { faHtml5, faCss3Alt, faSass, faJs, faReact, faFigma, faGithub, faGit } from "@fortawesome/free-brands-svg-icons";
-
+import { Link } from "react-router-dom";
 
 
 const StyledDivProject = styled.div`
@@ -36,14 +36,17 @@ const StyledDivProject = styled.div`
     height: 420px;
     border-radius: 10px;
     transition: left 1s;
+    color: white;
+    
 
     @media (max-width: 768px) {
-    min-width: 250px;
-    width: 250px;
-    height: 210px;
+        min-width: 200px;
+        width: 200px;
+        height: 200px;
+        max-height: 200px;
 
     }
-
+    
     & h5 {
     margin: 10px 0;
     font-size: 1.3em;
@@ -54,10 +57,10 @@ const StyledDivProject = styled.div`
     height: 240px;
 
         @media (max-width: 768px) {
-        min-width: 250px;
-        width: 250px;
-        height: 210px;
-        max-height: 210px;
+        min-width: 200px;
+        width: 200px;
+        height: 200px;
+        max-height: 200px;
         }
     }
 
@@ -69,8 +72,6 @@ const StyledDivProject = styled.div`
 
         }
     }
-
-    
 `;
 
 
@@ -106,54 +107,62 @@ export default function Projects() {
           </div>
 
           <div className="central">
-            <StyledDivProject style={{ left: left }}>
-                <h5>Argent Bank</h5>
-                <img src={ScreenArgentBank} alt="Argent Bank" className="couverture" />
-                <p>Front-end d'une application bancaire</p>
-                <div style={{display: "flex", gap: "15px",}}>
-                    <FontAwesomeIcon className="logo" icon={faHtml5} style={{fontSize: "30px"}}></FontAwesomeIcon>
-                    <FontAwesomeIcon className="logo" icon={faCss3Alt} style={{fontSize: "30px"}}></FontAwesomeIcon>
-                    <FontAwesomeIcon className="logo" icon={faJs} style={{fontSize: "30px"}}></FontAwesomeIcon>
-                    <FontAwesomeIcon className="logo" icon={faReact} style={{fontSize: "30px"}}></FontAwesomeIcon>
-                    <img src={LogoRedux} className="logo" alt="" style={{width: "28px"}} />
-                </div>
-            </StyledDivProject>
+            <Link to={"/projects#argentbank"}>
+              <StyledDivProject style={{ left: left }}>
+                  <h5>Argent Bank</h5>
+                  <img src={ScreenArgentBank} alt="Argent Bank" className="couverture" />
+                  <p>Front-End of a Banking Application</p>
+                  <div style={{display: "flex", gap: "15px",}}>
+                      <FontAwesomeIcon className="logo" icon={faHtml5} style={{fontSize: "30px"}}></FontAwesomeIcon>
+                      <FontAwesomeIcon className="logo" icon={faCss3Alt} style={{fontSize: "30px"}}></FontAwesomeIcon>
+                      <FontAwesomeIcon className="logo" icon={faJs} style={{fontSize: "30px"}}></FontAwesomeIcon>
+                      <FontAwesomeIcon className="logo" icon={faReact} style={{fontSize: "30px"}}></FontAwesomeIcon>
+                      <img src={LogoRedux} className="logo" alt="" style={{width: "28px"}} />
+                  </div>
+              </StyledDivProject>
+            </Link>
 
-            <StyledDivProject style={{ left: left + 535 }}>
-                <h5>Evasion Virtuelle</h5>
-                <img src={ScreenEvasionVirtuelle} alt="Evasion Virtuelle" className="couverture" />
-                <p>Création d'un site vitrine</p>
-                <div style={{display: "flex", gap: "15px",}}>
-                    <img src={LogoWordpress} className="logo" alt="" style={{width: "28px"}} />
-                </div>
-            </StyledDivProject>
+            <Link to={"/projects#evasionvirtuelle"}>
+              <StyledDivProject style={{ left: left + 535 }}>
+                  <h5>Evasion Virtuelle</h5>
+                  <img src={ScreenEvasionVirtuelle} alt="Evasion Virtuelle" className="couverture" />
+                  <p>Creation of a showcase website</p>
+                  <div style={{display: "flex", gap: "15px",}}>
+                      <img src={LogoWordpress} className="logo" alt="" style={{width: "28px"}} />
+                  </div>
+              </StyledDivProject>
+            </Link>
 
-            <StyledDivProject style={{ left: left + 535*2}}>
-                <h5>724 Events</h5>
-                <img src={Screen724events} alt="724 Events" className="couverture" />
-                <p>Débugger un site web React</p>
-                <div style={{display: "flex", gap: "15px",}}>
-                    <FontAwesomeIcon className="logo" icon={faHtml5} style={{fontSize: "30px"}}></FontAwesomeIcon>
-                    <FontAwesomeIcon className="logo" icon={faCss3Alt} style={{fontSize: "30px"}}></FontAwesomeIcon>
-                    <FontAwesomeIcon className="logo" icon={faJs} style={{fontSize: "30px"}}></FontAwesomeIcon>
-                    <FontAwesomeIcon className="logo" icon={faReact} style={{fontSize: "30px"}}></FontAwesomeIcon>
-                </div>
-            </StyledDivProject>
+            <Link to={"/projects#events724"}>
+              <StyledDivProject style={{ left: left + 535*2}}>
+                  <h5>724 Events</h5>
+                  <img src={Screen724events} alt="724 Events" className="couverture" />
+                  <p>Debugging a React website</p>
+                  <div style={{display: "flex", gap: "15px",}}>
+                      <FontAwesomeIcon className="logo" icon={faHtml5} style={{fontSize: "30px"}}></FontAwesomeIcon>
+                      <FontAwesomeIcon className="logo" icon={faCss3Alt} style={{fontSize: "30px"}}></FontAwesomeIcon>
+                      <FontAwesomeIcon className="logo" icon={faJs} style={{fontSize: "30px"}}></FontAwesomeIcon>
+                      <FontAwesomeIcon className="logo" icon={faReact} style={{fontSize: "30px"}}></FontAwesomeIcon>
+                  </div>
+              </StyledDivProject>
+            </Link>
 
-            <StyledDivProject style={{ left: left + 535*3}}>
-                <h5>Nina Carducci</h5>
-                <img src={ScreenNinaCarducci} alt="Nina Carducci" className="couverture" />
-                <p>Optimisation SEO</p>
-                <div style={{display: "flex", gap: "15px",}}>
-                    <FontAwesomeIcon className="logo" icon={faHtml5} style={{fontSize: "30px"}}></FontAwesomeIcon>
-                    <FontAwesomeIcon className="logo" icon={faJs} style={{fontSize: "30px"}}></FontAwesomeIcon>
-                 </div>
-            </StyledDivProject>
+            <Link to={"/projects#ninacarducci"}>
+              <StyledDivProject style={{ left: left + 535*3}}>
+                  <h5>Nina Carducci</h5>
+                  <img src={ScreenNinaCarducci} alt="Nina Carducci" className="couverture" />
+                  <p>SEO Optimisation</p>
+                  <div style={{display: "flex", gap: "15px",}}>
+                      <FontAwesomeIcon className="logo" icon={faHtml5} style={{fontSize: "30px"}}></FontAwesomeIcon>
+                      <FontAwesomeIcon className="logo" icon={faJs} style={{fontSize: "30px"}}></FontAwesomeIcon>
+                  </div>
+              </StyledDivProject>
+            </Link>
 
             <StyledDivProject style={{ left: left + 535*4}}>
                 <h5>Kasa</h5>
                 <img src={ScreenCasa} alt="Kasa" className="couverture" />
-                <p>Plateforme d'hebergement avec React</p>
+                <p>Hosting platform with React</p>
                 <div style={{display: "flex", gap: "15px",}}>
                     <FontAwesomeIcon className="logo" icon={faHtml5} style={{fontSize: "30px"}}></FontAwesomeIcon>
                     <FontAwesomeIcon className="logo" icon={faCss3Alt} style={{fontSize: "30px"}}></FontAwesomeIcon>
@@ -165,7 +174,7 @@ export default function Projects() {
             <StyledDivProject style={{ left: left + 535*5}}>
                 <h5>Sophie Bluel</h5>
                 <img src={ScreenSophieBluel} alt="Sophie Bluel" className="couverture" />
-                <p>Portfolio avec JavaScript</p>
+                <p>Portfolio with JavaScript</p>
                 <div style={{display: "flex", gap: "15px",}}>
                     <FontAwesomeIcon className="logo" icon={faHtml5} style={{fontSize: "30px"}}></FontAwesomeIcon>
                     <FontAwesomeIcon className="logo" icon={faCss3Alt} style={{fontSize: "30px"}}></FontAwesomeIcon>

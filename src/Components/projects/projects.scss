@@ -1,7 +1,7 @@
 $murrey: rgba(149, 9, 82, 1);
 $tyrian-purple: rgba(94, 0, 53, 1);
 $black: rgba(2, 2, 2, 1);
-$midnight-green: rgba(0, 92, 105, 1);
+$midnight-green: rgb(3, 39, 66);
 
 
 .section--projects {
@@ -52,11 +52,12 @@ $midnight-green: rgba(0, 92, 105, 1);
         z-index: 1000;
         transition: scale 0.1s;
         color: $murrey;
+        cursor: pointer;
 
         @media (max-width: 768px) {
         
             font-size: 75px;
-    
+            margin: 0 5px
         }
     }
 
@@ -80,3 +81,4 @@ $midnight-green: rgba(0, 92, 105, 1);
         }
     }
 }
+

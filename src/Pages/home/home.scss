@@ -1,10 +1,11 @@
 body {
+    margin: 0;
     line-height: 1.6;
     color: #fff;
     background: #000;
     font-size: 18px;
     font-weight: 400;
-    font-family: "-apple-system", "BlinkMacSystemFont", "Roboto", "Helvetica Neue", sans-serif !important;
+    font-family: "Gill Sans", "Helvetica Neue", sans-serif !important;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
@@ -34,27 +35,6 @@ body {
     justify-content: center;
     align-items: center;
     background: #000000;
-    color: #fff;
-    position: relative;
-
-    // &:after {
-    //     content: "";
-    //     position: absolute;
-    //     left: 0;
-    //     top: 0;
-    //     background: #000;
-    //     opacity: .5;
-    //     height: 100%;
-    //     width: 100%;
-    // }
-}
-
-#hero-background {
-
-    display: flex;
-    // padding: 50px;
-    justify-content: center;
-    align-items: center;
     color: #fff;
     position: relative;
 }
@@ -102,7 +82,7 @@ nav {  //deployé
     margin: 0 auto;
     padding: 0 20px;
     
-    border: 1px solid rgba(255,255,255,.06);
+    border: 1px solid rgba(0, 0, 0, 0.5);
     border-radius: 200px;
 
     background-color: rgba(255,255,255,.05);

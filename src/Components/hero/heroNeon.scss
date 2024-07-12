@@ -1,0 +1,72 @@
+$murrey: rgba(149, 9, 82, 1);
+$tyrian-purple: rgba(94, 0, 53, 1);
+$black: rgba(2, 2, 2, 1);
+$midnight-green: rgba(3, 39, 66,1);
+
+
+.section__hero {
+
+    height: 65vh;
+    width: 100vw;
+    background-image: 
+    linear-gradient(0deg, rgba(3, 39, 66,1) 0%, rgba(3, 39, 66,0.5) 10%, rgba(2,2,2,0) 100%),
+    url("../../Assets/background-hero.webp");
+    background-size: cover; /* Ajuste la taille de l'image pour couvrir toute la zone */
+    background-position: center; /* Centre l'image dans la zone */
+    background-repeat: no-repeat; /* Empêche la répétition de l'image */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+
+    }
+
+    .barre {
+
+        position: absolute;
+        height: 3px;
+        background-color: white;
+        width: 70%;
+
+        
+    }
+
+    #left {
+
+        top: 25vh;
+        animation: slideLeftToRight 1s forwards;
+
+    }
+
+    #right {
+
+        top: 40vh;
+        animation: slideRightToLeft 1s forwards;
+        
+    }
+}
+
+@keyframes slideLeftToRight {
+
+    from {
+        transform: translateX(-100vw) ;
+    }
+    
+    to {
+        transform: translateX(0) ;
+    }
+}
+
+@keyframes slideRightToLeft {
+
+    from {
+        transform: translateX(+100vw) ;
+    }
+    
+    to {
+        transform: translateX(0) ;
+    }
+}

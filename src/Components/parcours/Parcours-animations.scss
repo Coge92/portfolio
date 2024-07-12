@@ -19,7 +19,12 @@
     transform: rotate(-45deg);
     z-index: 99;
 
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
+
+
   
   .star {
     $star-count: 50;

@@ -1,0 +1,146 @@
+$murrey: rgba(149, 9, 82, 1);
+$tyrian-purple: rgba(94, 0, 53, 1);
+$black: rgba(2, 2, 2, 1);
+$midnight-green: rgb(3, 39, 66);
+
+
+.presentation__projet {
+
+    padding-top: 75px;
+    // height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    .container {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1vw;
+
+        @media (max-width: 768px) {
+  
+            gap: 3vh;
+    
+          }
+
+        img {
+
+            width: 70vw;
+
+            @media (max-width: 768px) {
+  
+                width: 90vw;
+        
+              }
+            
+        }
+
+        h5 {
+            margin: 0;
+
+            @media (max-width: 768px) {
+  
+                margin: 0 10px;
+        
+              }
+        }
+
+        &--content {
+
+            width: 70vw;
+
+            display: flex;
+            justify-content: space-between;
+            gap: 5vw;
+
+            @media (max-width: 768px) {
+  
+                flex-direction: column-reverse;
+                width: 90vw;
+        
+              }
+
+            .container--text {
+
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+
+
+                p {
+                    font-size: 14px;
+                }
+            }
+
+            .container--right {
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+               
+                gap: 40px;
+               
+            }
+
+            .logo__container {
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                align-content: center;
+                gap: 40px;
+                flex-wrap: wrap;
+                width: 250px;
+                
+            }
+
+            .logo {
+
+                width: 40px;
+                font-size: 40px;
+            }
+
+            .githubLink {
+
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                width: 120px;
+                height: 30px;
+                background-color: white;
+                color: $black;
+                padding: 0 5px;
+                font-size: 25px;
+                border-radius: 5px;
+
+                p {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    .separator {
+
+        margin-top: 50px;
+        width: 70vw;
+        height: 2px;
+        background-color: white;
+        animation: slideLeftToRight 1s forwards;
+    }
+}
+
+@keyframes slideLeftToRight {
+
+    from {
+        transform: translateX(-100vw) ;
+    }
+    
+    to {
+        transform: translateX(0) ;
+    }
+}
