@@ -2,7 +2,7 @@ body {
   margin: 0;
   line-height: 1.6;
   color: #fff;
-  background: #000;
+  background: rgb(2, 2, 2);
   font-size: 18px;
   font-weight: 400;
   font-family: "Gill Sans", "Helvetica Neue", sans-serif !important;
@@ -58,7 +58,12 @@ h3 {
 
 header {
   z-index: 99999;
-  position: relative;
+  position: absolute;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 header nav {
   display: flex;
@@ -74,11 +79,12 @@ header nav {
   margin: 0 auto;
   padding: 0 20px;
   border: 1px solid rgba(0, 0, 0, 0.5);
-  border-radius: 200px;
+  border-radius: 20px;
   background-color: rgba(255, 255, 255, 0.05);
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
   transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1) 0.2s;
+  overflow: hidden;
 }
 @media (max-width: 768px) {
   header nav {
@@ -87,10 +93,8 @@ header nav {
     align-items: center;
     width: 60%;
     height: 300px;
-    margin: 0;
-    left: 50%;
-    border-radius: 20px;
-    transform: translateX(-50%);
+    margin: 0 auto;
+    padding: 0;
   }
 }
 header nav a {
@@ -101,7 +105,6 @@ header nav a {
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  padding: 10px 20px;
   line-height: 1;
   font-size: 15px;
   letter-spacing: 2px;
@@ -158,11 +161,6 @@ header.sticky nav {
   width: 90px;
   height: 90px;
   transition-delay: 0.5s;
-}
-@media (max-width: 768px) {
-  header.sticky nav {
-    transform: translateX(-50%);
-  }
 }
 header.sticky nav button {
   transform: scale(1);

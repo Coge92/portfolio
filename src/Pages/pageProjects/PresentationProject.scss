@@ -22,7 +22,9 @@ $midnight-green: rgb(3, 39, 66);
 
         @media (max-width: 768px) {
   
+            width: 100%;
             gap: 3vh;
+            background: linear-gradient(180deg, $midnight-green, $tyrian-purple 100%);
     
           }
 

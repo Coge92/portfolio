@@ -68,6 +68,7 @@ export function PageProjects() {
           h5="Developpement d'un site web avec Wordpress"
           html
           css
+          wordpress
           link="https://evasionvirtuelle.fr/"
         >
             <p>

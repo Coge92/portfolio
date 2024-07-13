@@ -20,6 +20,8 @@ $midnight-green: rgba(3, 39, 66,1);
     justify-content: center;
     align-items: center;
 
+    overflow-x: hidden;
+
     h2 {
 
     }
@@ -37,7 +39,7 @@ $midnight-green: rgba(3, 39, 66,1);
     #left {
 
         top: 25vh;
-        animation: slideLeftToRight 1s forwards;
+        animation: slideLeftToRight2 1s forwards;
 
     }
 
@@ -49,10 +51,9 @@ $midnight-green: rgba(3, 39, 66,1);
     }
 }
 
-@keyframes slideLeftToRight {
-
+@keyframes slideLeftToRight2 {
     from {
-        transform: translateX(-100vw) ;
+        transform: translateX(-10vw) ;
     }
     
     to {
@@ -63,7 +64,7 @@ $midnight-green: rgba(3, 39, 66,1);
 @keyframes slideRightToLeft {
 
     from {
-        transform: translateX(+100vw) ;
+        transform: translateX(10vw) ;
     }
     
     to {

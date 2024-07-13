@@ -65,13 +65,19 @@ $midnight-green: rgb(3, 39, 66);
 
     &--text {
         width: 50%;
-        border: 2px white dotted;
+        border: 2px white solid;
+        background-color: rgba(2, 2, 2, 0.2);
         border-radius: 10px;
         padding: 0 30px;
 
         @media (max-width: 768px) {
-            width: 250px;
+            width: 300px;
             padding: 0 5px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+            border: 2px white solid;
         }
 
         p {

@@ -31,7 +31,8 @@ export function PresentationProject(props) {
                             {props.sass ? <FontAwesomeIcon icon={faSass} className="logo"></FontAwesomeIcon> : ""}
                             {props.js ? <FontAwesomeIcon icon={faJs} className="logo"></FontAwesomeIcon> : ""}
                             {props.react ? <FontAwesomeIcon icon={faReact} className="logo"></FontAwesomeIcon> : ""}
-                            {props.redux ? <img src={LogoRedux} className="logo"></img> : ""}
+                            {props.redux ? <img src={LogoRedux} className="logo" alt="Redux"></img> : ""}
+                            {props.wordpress ? <img src={LogoWordpress} className="logo" alt="Wordpress"></img> : ""}
 
                         </div>
                         
@@ -60,8 +61,9 @@ export function PresentationProject(props) {
                         
                     </div>
                 </div>
+                <div className="separator"></div>
             </div>
-            <div className="separator"></div>
+            
         </section>
         
         </>

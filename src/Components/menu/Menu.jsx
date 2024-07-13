@@ -83,7 +83,7 @@ export default function Menu() {
 
     return <>
 
-    <header id="myHeader" className="">
+    <header id="myHeader" className="sticky">
         <nav>
           <a href="#Apropos">About</a>
           <a href="#background">Background</a>

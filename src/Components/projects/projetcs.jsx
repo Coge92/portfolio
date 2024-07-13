@@ -44,7 +44,6 @@ const StyledDivProject = styled.div`
         width: 200px;
         height: 200px;
         max-height: 200px;
-
     }
     
     & h5 {

@@ -84,7 +84,7 @@ export default function MenuProjects() {
 
     return <>
 
-    <header id="myHeader" className="">
+    <header id="myHeader" className="sticky">
         <nav>
             <Link to={"/"}>Home</Link>
             <a href={"/projects#argentbank"}>Argent Bank</a>

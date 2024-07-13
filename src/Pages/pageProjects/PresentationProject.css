@@ -13,7 +13,9 @@
 }
 @media (max-width: 768px) {
   .presentation__projet .container {
+    width: 100%;
     gap: 3vh;
+    background: linear-gradient(180deg, rgb(3, 39, 66), rgb(94, 0, 53) 100%);
   }
 }
 .presentation__projet .container img {

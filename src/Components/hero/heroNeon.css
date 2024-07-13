@@ -10,6 +10,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow-x: hidden;
 }
 .section__hero .barre {
   position: absolute;
@@ -19,16 +20,16 @@
 }
 .section__hero #left {
   top: 25vh;
-  animation: slideLeftToRight 1s forwards;
+  animation: slideLeftToRight2 1s forwards;
 }
 .section__hero #right {
   top: 40vh;
   animation: slideRightToLeft 1s forwards;
 }
 
-@keyframes slideLeftToRight {
+@keyframes slideLeftToRight2 {
   from {
-    transform: translateX(-100vw);
+    transform: translateX(-10vw);
   }
   to {
     transform: translateX(0);
@@ -36,7 +37,7 @@
 }
 @keyframes slideRightToLeft {
   from {
-    transform: translateX(100vw);
+    transform: translateX(10vw);
   }
   to {
     transform: translateX(0);
