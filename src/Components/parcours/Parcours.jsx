@@ -31,13 +31,13 @@ export default function Parcours() {
                     <h4 className="timeline__item timeline__item--year">2021</h4>
                     
                     <div className="timeline__item">
-                        <h5 className="timeline__title">Austalia Journey</h5>
+                        <h5 className="timeline__title">Australia Journey</h5>
                     </div>
                     
                     <h4 className="timeline__item timeline__item--year">2020</h4>
                     
                     <div className="timeline__item">
-                        <h5 className="timeline__title">Business Developper</h5>
+                        <h5 className="timeline__title">Business Developer</h5>
                         <p className="timeline__blurb">Eventiz Media Group - L'Echo Touristique</p>
                     </div>
                     

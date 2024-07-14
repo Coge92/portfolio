@@ -26,6 +26,7 @@ export function PageProjects() {
     }
   }, []);
 
+
   return (
     <>
       <MenuProjects></MenuProjects>
@@ -93,7 +94,7 @@ export function PageProjects() {
           sass
           js
           react
-          githublink="https://www.google.com/"
+          githublink="https://github.com/Coge92/724events"
         >
             <p>
             Objectif : Débugger et finaliser le développement d'un site one-page. <br />

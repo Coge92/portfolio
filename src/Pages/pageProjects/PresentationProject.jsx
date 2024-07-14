@@ -38,7 +38,7 @@ export function PresentationProject(props) {
                         
 
                         {props.githublink &&     
-                            <a href={props.githublink}>                        
+                            <a target="_blank" href={props.githublink}>                        
                                 <div className="githubLink">
                                 
                                     <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>

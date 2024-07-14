@@ -19,8 +19,8 @@ import {
   faChevronRight,
 } from "@fortawesome/free-solid-svg-icons";
 import { faHtml5, faCss3Alt, faSass, faJs, faReact, faFigma, faGithub, faGit } from "@fortawesome/free-brands-svg-icons";
-import { Link } from "react-router-dom";
-
+import { Link, useLocation } from "react-router-dom";
+import { useEffect } from "react";
 
 const StyledDivProject = styled.div`
     background-color: rgba(149, 9, 82, 0.5);
@@ -94,6 +94,8 @@ export default function Projects() {
       console.log("clique droite", left);
     }
   }
+
+
 
   return (
     <>

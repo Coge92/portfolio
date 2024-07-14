@@ -1,0 +1,179 @@
+body {
+  margin: 0;
+  line-height: 1.6;
+  color: #fff;
+  background: rgb(2, 2, 2);
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Gill Sans", "Helvetica Neue", sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+body.stop {
+  overflow: hidden;
+}
+
+#main {
+  position: relative;
+  transition: 1s all ease-in-out;
+}
+#main.menuopen {
+  opacity: 0.6;
+  filter: blur(20px);
+  transform: scale(1);
+}
+
+.section {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: #000000;
+  color: #fff;
+  position: relative;
+}
+
+h1 {
+  font-size: 60px;
+  margin: 0;
+  z-index: 2;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0;
+}
+
+h2 {
+  font-size: 60px;
+  margin: 0;
+  z-index: 2;
+  position: relative;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+header {
+  z-index: 99999;
+  position: absolute;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+header nav {
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 50px;
+  z-index: 9;
+  width: 500px;
+  margin: 0 auto;
+  padding: 0 20px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.05);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1) 0.2s;
+  overflow: hidden;
+}
+@media (max-width: 768px) {
+  header nav {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 300px;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  line-height: 1;
+  font-size: 15px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  transition: 0.3s all cubic-bezier(0.075, 0.82, 0.165, 1) 0.6s;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  header nav a {
+    height: 150px;
+    background-color: rgba(255, 255, 255, 0.068);
+  }
+}
+header nav button {
+  -webkit-appearance: none;
+  background: rgba(255, 255, 255, 0.3);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  border: 3px solid rgb(255, 255, 255);
+  position: absolute;
+  z-index: 99;
+  left: 0;
+  margin: auto;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  outline: 0;
+  cursor: pointer;
+  transition: 0.3s all cubic-bezier(0.075, 0.82, 0.165, 1) 0.2s;
+  transform: scale(0);
+}
+header nav button span {
+  width: 40%;
+  background: #fff;
+  height: 2px;
+  display: block;
+  margin: 5px auto;
+  transform: scalex(0);
+  transition: 0.6s transform cubic-bezier(0.075, 0.82, 0.165, 1) 0s, 0.3s margin ease-in 0s;
+}
+header nav button:hover {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+header nav button:hover span {
+  margin: 10px auto;
+}
+
+header.sticky nav {
+  top: 20px;
+  padding: 0;
+  width: 90px;
+  height: 90px;
+  transition-delay: 0.5s;
+}
+header.sticky nav button {
+  transform: scale(1);
+  transition-delay: 0.6s;
+}
+header.sticky nav button span {
+  transform: scalex(1);
+  transition: 0.6s transform cubic-bezier(0.075, 0.82, 0.165, 1) 0.8s, 0.3s margin ease-in 0s;
+}
+header.sticky nav a {
+  padding: 0;
+  opacity: 0;
+  letter-spacing: 0px;
+  transform: scale(0.3);
+  transition-delay: 0.2s;
+}/*# sourceMappingURL=mentionslegales.css.map */

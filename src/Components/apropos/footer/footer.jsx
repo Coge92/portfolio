@@ -4,6 +4,7 @@ import "./footer.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
+import { Link } from "react-router-dom";
  
 export function Footer() {
 
@@ -14,7 +15,7 @@ export function Footer() {
         <section className="section__footer">
 
             <div>
-                <p>Mentions légales</p>
+                <Link to={"/mentionslegales"}>Mentions légales</Link>
             </div>
             <div id="footerIcones">
                 

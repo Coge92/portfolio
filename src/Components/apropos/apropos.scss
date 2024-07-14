@@ -115,12 +115,23 @@ $midnight-green: rgb(3, 39, 66);
             display: flex;
             flex-direction: column;
             justify-content: center;
-            width: 80%;
+            width: 90%;
             align-items: center;
         }
+
     }
 
-    .radar {
+    & .radar {
+
+        canvas {
+
+            @media (max-width: 768px) {
+                
+                width: 250px;
+
+            }
+
+        }
 
     & h3 {
 
@@ -130,7 +141,6 @@ $midnight-green: rgb(3, 39, 66);
         }
 
     }
-
 
     }
 

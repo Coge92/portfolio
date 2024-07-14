@@ -27,8 +27,29 @@ import LogoSlack from "../../Assets/slack-1.svg";
 import LogoTrello from "../../Assets/trello.svg";
 import LogoWordpress from "../../Assets/wordpress-icon-1.svg";
 import LogoBrevo from "../../Assets/brevo.svg";
+import { useEffect, useState } from "react";
 
 export default function APropos() {
+
+  const [fontGraph, setFontGraph] = useState(14)
+  const [paddingGraphRight, setPaddingGraphRight] = useState(0)
+  const [paddingGraphLeft, setPaddingGraphLeft] = useState(0)
+  
+  useEffect(() => {
+
+    if (window.innerWidth < 768) {
+
+      setFontGraph(10)
+      setPaddingGraphLeft(50)
+      setPaddingGraphRight(20)
+      
+    }
+   
+  }, [])
+
+
+
+
   return (
     <>
       <section className="section--apropos" id="Apropos">
@@ -41,7 +62,6 @@ export default function APropos() {
                 src="https://mehdihabibi.fr/PhotoMH.jpg"
                 alt="Profil illustration"
               />
-
               <div className="apropos__profil--text">
                 <p>
                   I am naturally enthusiastic and curious. I enjoy creating solutions that generate value and have positive impacts. <br /><br />
@@ -63,7 +83,7 @@ export default function APropos() {
                     "Projet Management",
                     "Marketing",
                     "Communication",
-                    "Sales representation",
+                    "Sales Rep",
                     "Coordination",
                   ],
                   datasets: [
@@ -79,7 +99,7 @@ export default function APropos() {
                 options={{
                   plugins: {
                     legend: {
-                      display: false, // Masque la légende
+                      display: false, 
                     },
                   },
                   responsive: true,
@@ -91,8 +111,8 @@ export default function APropos() {
                         color: "gray", // Couleur des lignes d'angle
                         lineWidth: 1, // Épaisseur des lignes d'angle
                       },
-                      suggestedMin: 0, // Valeur minimale suggérée
-                      suggestedMax: 10, // Valeur maximale suggérée
+                      suggestedMin: 0, // Valeur minimale 
+                      suggestedMax: 10, // Valeur maximale 
                       ticks: {
                         display: false, // Masquer les chiffres sur l'axe radial
                         beginAtZero: true, // Commencer l'axe à 0
@@ -102,11 +122,19 @@ export default function APropos() {
                         color: "white", // Change la couleur du texte des labels
                         padding: 20, // Espacement entre les légendes et le graphique
                         font: {
-                          size: 18, // Change la taille du texte des labels
+                          size: fontGraph, // Change la taille du texte des labels
                           weight: 700,
                         },
                       },
                     },
+                  },
+                  layout: {
+                    padding: {
+                      top: 0,
+                      bottom: 0,
+                      left: paddingGraphLeft,
+                      right: paddingGraphRight,
+                   },
                   },
                   elements: {
                     line: {
@@ -123,6 +151,7 @@ export default function APropos() {
                     },
                   },
                 }}
+                
               />
             </div>
 
@@ -133,11 +162,11 @@ export default function APropos() {
                 data={{
                   labels: [
                     "Adaptable",
-                    "Dynamique",
-                    "Pugnace",
+                    "Dynamic",
+                    "Pugnacious",
                     "Team player",
-                    "Positif",
-                    "Determiné",
+                    "Positive",
+                    "Determined",
                   ],
                   datasets: [
                     {
@@ -184,6 +213,16 @@ export default function APropos() {
                     line: {
                       backgroundColor: "white",
                     },
+                    arc: {
+                      hoverBackgroundColor: (context) => {
+                        const backgroundColor = context.dataset.backgroundColor;
+                        return backgroundColor;
+                      },
+                      hoverBorderColor: "white",
+                      hoverBorderWidth: 2,
+                      hoverOffset: 15, // Augmente la taille de l'arc au survol
+                      borderWidth: 1,
+                    },
                   },
 
                   scales: {
@@ -209,18 +248,6 @@ export default function APropos() {
                     easing: "easeInOutBounce",
                     animateRotate: true,
                     animateScale: true,
-                  },
-                  elements: {
-                    arc: {
-                      hoverBackgroundColor: (context) => {
-                        const backgroundColor = context.dataset.backgroundColor;
-                        return backgroundColor;
-                      },
-                      hoverBorderColor: "white",
-                      hoverBorderWidth: 2,
-                      hoverOffset: 15, // Augmente la taille de l'arc au survol
-                      borderWidth: 1,
-                    },
                   },
                 }}
               />

@@ -94,8 +94,13 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 80%;
+    width: 90%;
     align-items: center;
+  }
+}
+@media (max-width: 768px) {
+  .apropos__graph .radar canvas {
+    width: 250px;
   }
 }
 @media (max-width: 768px) {
