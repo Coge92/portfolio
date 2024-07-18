@@ -33,7 +33,7 @@ const StyledDivProject = styled.div`
     align-items: center;
 
     min-width: 500px;
-    height: 420px;
+    height: 480px;
     border-radius: 10px;
     transition: left 1s;
     color: white;
