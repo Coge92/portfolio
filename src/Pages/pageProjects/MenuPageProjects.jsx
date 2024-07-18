@@ -91,7 +91,7 @@ export default function MenuProjects() {
             <a href={"/projects#evasionvirtuelle"}>Evasion Virtuelle</a>
             <a href={"/projects#events724"}>724 Events</a>
             <a href={"/projects#ninacarducci"}>Nina Carducci</a>
-          <button id="openmenu">
+          <button id="openmenu" aria-label="Menu">
             <span></span>
             <span></span>
           </button>

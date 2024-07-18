@@ -1,9 +1,7 @@
-import { Footer } from "../../Components/apropos/footer/footer";
-
+import { Footer } from "../../Components/footer/footer";
 import HeroNeon from "../../Components/hero/HeroNeon";
 import MenuProjects from "./MenuPageProjects";
 import { PresentationProject } from "./PresentationProject";
-
 import ScreenArgentBank from "../../Assets/ArgentBank-HomePage.webp";
 import ScreenEvasionVirtuelle from "../../Assets/EvasionVirtuelle-HomePage.webp";
 import Screen724events from "../../Assets/724events-HomePage.webp";
@@ -38,7 +36,7 @@ export function PageProjects() {
           id="argentbank"
           h3="Argent Bank"
           imgsource={ScreenArgentBank}
-          h5="Developpement d'une application web avec React & Redux"
+          h4="Developpement d'une application web avec React & Redux"
           html
           css
           sass
@@ -66,7 +64,7 @@ export function PageProjects() {
           id="evasionvirtuelle"
           h3="Evasion Virtuelle"
           imgsource={ScreenEvasionVirtuelle}
-          h5="Developpement d'un site web avec Wordpress"
+          h4="Developpement d'un site web avec Wordpress"
           html
           css
           wordpress
@@ -88,7 +86,7 @@ export function PageProjects() {
           id="events724"
           h3="724 Events"
           imgsource={Screen724events}
-          h5="Debugger un site web React"
+          h4="Debugger un site web React"
           html
           css
           sass
@@ -112,7 +110,7 @@ export function PageProjects() {
           id="ninacarducci"
           h3="Nina Carducci"
           imgsource={ScreenNinaCarducci}
-          h5="Optimisation SEO"
+          h4="Optimisation SEO"
           text="Lorem Ipsum rgqet ggeth thze thz thzrt  hzthztehaze t hzthzrth zrthkt ke rterfef retgp  rthkirot ergpe thp ie pthpe thpe thpetppe"
           html
           js

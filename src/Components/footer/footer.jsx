@@ -19,8 +19,8 @@ export function Footer() {
             </div>
             <div id="footerIcones">
                 
-                <a href="wwww.mehdihabibi.fr"><FontAwesomeIcon icon={faLinkedin} /> </a>
-                <a href="mailto:contact@mehdihabibi.fr"> <FontAwesomeIcon icon={faEnvelope} /> </a>
+                <a href="https://www.linkedin.com/in/mehdi-habibi/" aria-label="Découvrez le profil Linked'In de Mehdi Habibi"><FontAwesomeIcon icon={faLinkedin} /> </a>
+                <a href="mailto:contact@mehdihabibi.fr" aria-label="Envoyer un mail à Mehdi Habibi"> <FontAwesomeIcon icon={faEnvelope} /> </a>
                  
                
             </div>

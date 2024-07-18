@@ -88,8 +88,8 @@ export default function Menu() {
           <a href="#Apropos">About</a>
           <a href="#background">Background</a>
           <a href="#projects">IT Projects</a>
-          <a href="#future">Future</a>
-          <button id="openmenu">
+          <a href="/projects">Projects Details</a>
+          <button id="openmenu" aria-label="Menu">
             <span></span>
             <span></span>
           </button>

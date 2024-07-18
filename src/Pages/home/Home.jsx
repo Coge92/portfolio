@@ -4,7 +4,7 @@ import APropos from "../../Components/apropos/APropos.jsx";
 import Menu from "../../Components/menu/Menu.jsx";
 import Parcours from "../../Components/parcours/Parcours.jsx";
 import Projects from "../../Components/projects/projetcs.jsx";
-import { Footer } from "../../Components/apropos/footer/footer.jsx";
+import { Footer } from "../../Components/footer/footer.jsx";
 
 export function Home() {
   return (

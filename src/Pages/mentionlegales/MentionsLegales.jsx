@@ -1,7 +1,7 @@
 import "./mentionslegales.css";
 import HeroNeon from "../../Components/hero/HeroNeon.jsx";
 import MenuMentionsLegales from "./MenuMentionsLegales.jsx";
-import { Footer } from "../../Components/apropos/footer/footer.jsx";
+import { Footer } from "../../Components/footer/footer.jsx";
 
 export function MentionsLegales() {
   return (

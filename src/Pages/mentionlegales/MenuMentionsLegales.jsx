@@ -86,7 +86,7 @@ export default function MenuMentionsLegales() {
     <header id="myHeader" className="sticky">
         <nav>
           <a href="/">Home</a>
-          <button id="openmenu">
+          <button id="openmenu" aria-label="Menu">
             <span></span>
             <span></span>
           </button>

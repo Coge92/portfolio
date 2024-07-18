@@ -265,6 +265,7 @@ export default function APropos() {
                   <FontAwesomeIcon
                     className="logo"
                     icon={faHtml5}
+                    alt="logo HTML5"
                   ></FontAwesomeIcon>
                   <p>HTML5</p>
                 </div>
@@ -273,6 +274,7 @@ export default function APropos() {
                   <FontAwesomeIcon
                     className="logo"
                     icon={faCss3Alt}
+                    alt="logo CSS3"
                   ></FontAwesomeIcon>
                   <p>CSS3</p>
                 </div>
@@ -281,6 +283,7 @@ export default function APropos() {
                   <FontAwesomeIcon
                     className="logo"
                     icon={faSass}
+                    alt="logo Sass"
                   ></FontAwesomeIcon>
                   <p>SASS</p>
                 </div>
@@ -289,6 +292,7 @@ export default function APropos() {
                   <FontAwesomeIcon
                     className="logo"
                     icon={faJs}
+                    alt="logo Javascript"
                   ></FontAwesomeIcon>
                   <p>JavasScript</p>
                 </div>
@@ -297,12 +301,13 @@ export default function APropos() {
                   <FontAwesomeIcon
                     className="logo"
                     icon={faReact}
+                    alt="logo React"
                   ></FontAwesomeIcon>
                   <p>React</p>
                 </div>
 
                 <div className="logos__container">
-                  <img src={LogoRedux} className="logo" alt="" />
+                  <img src={LogoRedux} className="logo" alt="Logo Redux" />
                   <p>Redux</p>
                 </div>
 
@@ -310,6 +315,7 @@ export default function APropos() {
                   <FontAwesomeIcon
                     className="logo"
                     icon={faGit}
+                    alt="logo Git"
                   ></FontAwesomeIcon>
                   <p>Git</p>
                 </div>
@@ -318,6 +324,7 @@ export default function APropos() {
                   <FontAwesomeIcon
                     className="logo"
                     icon={faGithub}
+                    alt="logo GitHub"
                   ></FontAwesomeIcon>
                   <p>Github</p>
                 </div>
@@ -326,12 +333,13 @@ export default function APropos() {
                   <FontAwesomeIcon
                     className="logo"
                     icon={faFigma}
+                    alt="logo Figma"
                   ></FontAwesomeIcon>
                   <p>Figma</p>
                 </div>
 
                 <div className="logos__container">
-                  <img src={LogoVSC} className="logo" alt="" />
+                  <img src={LogoVSC} className="logo" alt="Logo Visual Studio Code" />
                   <p>Visual Studio Code</p>
                 </div>
               </div>
@@ -344,62 +352,62 @@ export default function APropos() {
             <div className="bandeau__container">
               <div className="logos">
                 <div className="logos__container">
-                  <img src={LogoOffice} className="logo" alt="" />
+                  <img src={LogoOffice} className="logo" alt="Logo Microsoft Office" />
                   <p>Office</p>
                 </div>
 
                 <div className="logos__container">
-                  <img src={LogoSalesforce} className="logo" alt="" />
+                  <img src={LogoSalesforce} className="logo" alt="Logo SalesForce" />
                   <p>Salesforce</p>
                 </div>
 
                 <div className="logos__container">
-                  <img src={LogoSellsy} className="logo" alt="" />
+                  <img src={LogoSellsy} className="logo" alt="Logo Sellsy" />
                   <p>Sellsy</p>
                 </div>
 
                 <div className="logos__container">
-                  <img src={LogoBrevo} className="logo" alt="" />
+                  <img src={LogoBrevo} className="logo" alt="Logo Brevo" />
                   <p>Brevo</p>
                 </div>
 
                 <div className="logos__container">
-                  <img src={LogoMonday} className="logo" alt="" />
+                  <img src={LogoMonday} className="logo" alt="Logo Monday" />
                   <p>Monday</p>
                 </div>
 
                 <div className="logos__container">
-                  <img src={LogoSlack} className="logo" alt="" />
+                  <img src={LogoSlack} className="logo" alt="Logo Slack" />
                   <p>Slack</p>
                 </div>
 
                 <div className="logos__container">
-                  <img src={LogoNotion} className="logo" alt="" />
+                  <img src={LogoNotion} className="logo" alt="Logo Notion" />
                   <p>Notion</p>
                 </div>
 
                 <div className="logos__container">
-                  <img src={LogoTrello} className="logo" alt="" />
+                  <img src={LogoTrello} className="logo" alt="Logo Trello" />
                   <p>Trello</p>
                 </div>
 
                 <div className="logos__container">
-                  <img src={LogoWordpress} className="logo" alt="" />
+                  <img src={LogoWordpress} className="logo" alt="Logo WordPress" />
                   <p>Wordpress</p>
                 </div>
 
                 <div className="logos__container">
-                  <img src={LogoGoogleAnalytics} className="logo" alt="" />
+                  <img src={LogoGoogleAnalytics} className="logo" alt="Logo Google Analytics" />
                   <p>Google Analytics</p>
                 </div>
 
                 <div className="logos__container">
-                  <img src={LogoGoogleAdManager} className="logo" alt="" />
+                  <img src={LogoGoogleAdManager} className="logo" alt="Logo Google AdManager" />
                   <p>Google Ad Manager</p>
                 </div>
 
                 <div className="logos__container">
-                  <img src={LogoGoogleSearch} className="logo" alt="" />
+                  <img src={LogoGoogleSearch} className="logo" alt="Logo Google Search Console" />
                   <p>Google Search Console</p>
                 </div>
               </div>

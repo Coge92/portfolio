@@ -18,7 +18,7 @@ export function PresentationProject(props) {
             <h3>{props.h3}</h3>
             <div className="container">
                 <img src={props.imgsource} alt={props.h3} />
-                <h5>{props.h5}</h5>
+                <h4>{props.h4}</h4>
                 <div className="container--content">
                     <div className="container--text">
                         
@@ -49,7 +49,7 @@ export function PresentationProject(props) {
                         }
 
                         {props.link &&    
-                            <a href={props.link}>                           
+                            <a target="_blank" href={props.link}>                           
                                 <div className="githubLink">
                                 
                                     <FontAwesomeIcon icon={faLink} />

@@ -1,4 +1,4 @@
-import { Footer } from "../../Components/apropos/footer/footer";
+import { Footer } from "../../Components/footer/footer";
 import Menu from "../../Components/menu/Menu";
 import HeroNeon from "../../Components/hero/HeroNeon";
 
