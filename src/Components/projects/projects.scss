@@ -45,6 +45,8 @@ $midnight-green: rgb(3, 39, 66);
     align-items: center;
 
     overflow: hidden;
+
+    
    
     .arrow {
 
@@ -52,6 +54,8 @@ $midnight-green: rgb(3, 39, 66);
         z-index: 1000;
         transition: scale 0.1s;
         color: $murrey;
+        // background-color: rgba($color: #ffffff, $alpha: 0.2);
+
         cursor: pointer;
 
         @media (max-width: 768px) {

@@ -6,7 +6,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background: rgb(2, 2, 2);
+  background: rgb(3, 3, 3);
   color: white;
   position: relative;
   z-index: 100;
@@ -19,7 +19,7 @@
   justify-content: flex-start;
   align-items: center;
   gap: 50px;
-  background: linear-gradient(180deg, rgb(3, 39, 66), rgb(94, 0, 53) 100%);
+  background: linear-gradient(180deg, rgb(3, 40, 68), #5e0035 100%);
 }
 .section--apropos__container h2 {
   font-size: 42px;
@@ -67,7 +67,7 @@
 
 .apropos__graph {
   width: 100%;
-  background-color: rgb(94, 0, 53);
+  background-color: #5e0035;
   padding-bottom: 150px;
   display: flex;
   flex-direction: row;
@@ -115,7 +115,7 @@
 }
 
 .apropos__bandeau {
-  background-color: rgb(94, 0, 53);
+  background-color: #5e0035;
   display: flex;
   justify-content: center;
   flex-direction: column;

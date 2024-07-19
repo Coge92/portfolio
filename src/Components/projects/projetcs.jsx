@@ -42,11 +42,12 @@ const StyledDivProject = styled.div`
     @media (max-width: 768px) {
         min-width: 200px;
         width: 200px;
-        height: 200px;
-        max-height: 200px;
+        height: 400px;
+        max-height: 400px;
+        text-align: center;
     }
     
-    & h5 {
+    & h3 {
     margin: 10px 0;
     font-size: 1.3em;
     }
@@ -67,7 +68,7 @@ const StyledDivProject = styled.div`
         
         @media (max-width: 768px) {
         text-align: center;
-        padding-top: 50px;
+        
 
         }
     }

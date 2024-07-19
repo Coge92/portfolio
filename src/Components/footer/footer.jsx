@@ -1,36 +1,69 @@
-
-import "./footer.css"
+import "./footer.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
- 
+
 export function Footer() {
+  return (
+    <>
+      <section className="section__footer">
+        <svg
+          id="wave"
+          style={{ transform: "rotate(0deg)", transition: "0.3s" }}
+          viewBox="0 0 1440 220"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs>
+            <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+              <stop stopColor="rgba(3, 40, 68, 1)" offset="0%"></stop>
+              <stop stopColor="rgba(94, 0, 53, 1)" offset="100%"></stop>
+            </linearGradient>
+          </defs>
+          <path
+            style={{ transform: "translate(0, 0px)", opacity: "1" }}
+            fill="url(#sw-gradient-0)"
+            d="M0,154L34.3,135.7C68.6,117,137,81,206,69.7C274.3,59,343,73,411,91.7C480,110,549,132,617,132C685.7,132,754,110,823,110C891.4,110,960,132,1029,121C1097.1,110,1166,66,1234,47.7C1302.9,29,1371,37,1440,33C1508.6,29,1577,15,1646,33C1714.3,51,1783,103,1851,132C1920,161,1989,169,2057,161.3C2125.7,154,2194,132,2263,128.3C2331.4,125,2400,139,2469,124.7C2537.1,110,2606,66,2674,62.3C2742.9,59,2811,95,2880,117.3C2948.6,139,3017,147,3086,154C3154.3,161,3223,169,3291,161.3C3360,154,3429,132,3497,106.3C3565.7,81,3634,51,3703,36.7C3771.4,22,3840,22,3909,44C3977.1,66,4046,110,4114,132C4182.9,154,4251,154,4320,128.3C4388.6,103,4457,51,4526,55C4594.3,59,4663,117,4731,117.3C4800,117,4869,59,4903,29.3L4937.1,0L4937.1,220L4902.9,220C4868.6,220,4800,220,4731,220C4662.9,220,4594,220,4526,220C4457.1,220,4389,220,4320,220C4251.4,220,4183,220,4114,220C4045.7,220,3977,220,3909,220C3840,220,3771,220,3703,220C3634.3,220,3566,220,3497,220C3428.6,220,3360,220,3291,220C3222.9,220,3154,220,3086,220C3017.1,220,2949,220,2880,220C2811.4,220,2743,220,2674,220C2605.7,220,2537,220,2469,220C2400,220,2331,220,2263,220C2194.3,220,2126,220,2057,220C1988.6,220,1920,220,1851,220C1782.9,220,1714,220,1646,220C1577.1,220,1509,220,1440,220C1371.4,220,1303,220,1234,220C1165.7,220,1097,220,1029,220C960,220,891,220,823,220C754.3,220,686,220,617,220C548.6,220,480,220,411,220C342.9,220,274,220,206,220C137.1,220,69,220,34,220L0,220Z"
+          ></path>
+          <defs>
+            <linearGradient id="sw-gradient-1" x1="0" x2="0" y1="1" y2="0">
+              <stop stopColor="rgba(94, 0, 53, 1)" offset="0%"></stop>
+              <stop stopColor="rgba(255, 255, 255, 0.2)" offset="100%"></stop>
+            </linearGradient>
+          </defs>
+          <path
+            style={{ transform: "translate(0, 50px)", opacity: "0.9"}}
+            fill="url(#sw-gradient-1)"
+            d="M0,0L34.3,33C68.6,66,137,132,206,165C274.3,198,343,198,411,176C480,154,549,110,617,102.7C685.7,95,754,125,823,113.7C891.4,103,960,51,1029,36.7C1097.1,22,1166,44,1234,69.7C1302.9,95,1371,125,1440,121C1508.6,117,1577,81,1646,55C1714.3,29,1783,15,1851,11C1920,7,1989,15,2057,25.7C2125.7,37,2194,51,2263,55C2331.4,59,2400,51,2469,44C2537.1,37,2606,29,2674,22C2742.9,15,2811,7,2880,22C2948.6,37,3017,73,3086,106.3C3154.3,139,3223,169,3291,154C3360,139,3429,81,3497,62.3C3565.7,44,3634,66,3703,80.7C3771.4,95,3840,103,3909,88C3977.1,73,4046,37,4114,44C4182.9,51,4251,103,4320,124.7C4388.6,147,4457,139,4526,113.7C4594.3,88,4663,44,4731,55C4800,66,4869,132,4903,165L4937.1,198L4937.1,220L4902.9,220C4868.6,220,4800,220,4731,220C4662.9,220,4594,220,4526,220C4457.1,220,4389,220,4320,220C4251.4,220,4183,220,4114,220C4045.7,220,3977,220,3909,220C3840,220,3771,220,3703,220C3634.3,220,3566,220,3497,220C3428.6,220,3360,220,3291,220C3222.9,220,3154,220,3086,220C3017.1,220,2949,220,2880,220C2811.4,220,2743,220,2674,220C2605.7,220,2537,220,2469,220C2400,220,2331,220,2263,220C2194.3,220,2126,220,2057,220C1988.6,220,1920,220,1851,220C1782.9,220,1714,220,1646,220C1577.1,220,1509,220,1440,220C1371.4,220,1303,220,1234,220C1165.7,220,1097,220,1029,220C960,220,891,220,823,220C754.3,220,686,220,617,220C548.6,220,480,220,411,220C342.9,220,274,220,206,220C137.1,220,69,220,34,220L0,220Z"
+          ></path>
+        </svg>
 
-    return (
-
-        <>
-
-        <section className="section__footer">
-
-            <div>
-                <Link to={"/mentionslegales"}>Mentions légales</Link>
-            </div>
-            <div id="footerIcones">
-                
-                <a href="https://www.linkedin.com/in/mehdi-habibi/" aria-label="Découvrez le profil Linked'In de Mehdi Habibi"><FontAwesomeIcon icon={faLinkedin} /> </a>
-                <a href="mailto:contact@mehdihabibi.fr" aria-label="Envoyer un mail à Mehdi Habibi"> <FontAwesomeIcon icon={faEnvelope} /> </a>
-                 
-               
-            </div>
-            <div>
-                <a href="wwww.mehdihabibi.fr">Mehdi Habibi.fr</a>
-            </div>
-
-
-        </section>
-        
-        </>
-    )
+        <div className="footer__container">
+          <div>
+            <Link to={"/mentionslegales"}>Mentions légales</Link>
+          </div>
+          <div id="footerIcones">
+            <a
+              href="https://www.linkedin.com/in/mehdi-habibi/"
+              aria-label="Découvrez le profil Linked'In de Mehdi Habibi"
+            >
+              <FontAwesomeIcon icon={faLinkedin} />{" "}
+            </a>
+            <a
+              href="mailto:contact@mehdihabibi.fr"
+              aria-label="Envoyer un mail à Mehdi Habibi"
+            >
+              {" "}
+              <FontAwesomeIcon icon={faEnvelope} />{" "}
+            </a>
+          </div>
+          <div>
+            <a href="wwww.mehdihabibi.fr">Mehdi Habibi.fr</a>
+          </div>
+        </div>
+      </section>
+    </>
+  );
 }
